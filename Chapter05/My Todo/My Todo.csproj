@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\app.component.html" />
+    <Content Include="wwwroot\app\app.component.js" />
+    <Content Include="wwwroot\app\app.component.js.map" />
+    <Content Include="wwwroot\app\app.component.ts" />
+    <Content Include="wwwroot\app\app.module.js" />
+    <Content Include="wwwroot\app\app.module.js.map" />
+    <Content Include="wwwroot\app\app.module.ts" />
+    <Content Include="wwwroot\app\todo.service.ts" />
+    <Content Include="wwwroot\app\todo.ts" />
+    <Content Include="wwwroot\Index.html" />
+    <Content Include="wwwroot\main.ts" />
+    <Content Include="wwwroot\systemjs-angular-loader.js" />
+    <Content Include="wwwroot\systemjs.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>

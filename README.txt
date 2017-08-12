@@ -1,0 +1,1 @@
+Chapter 1,2,4,9 are self Explanatory.

@@ -1,0 +1,21 @@
+﻿<section>
+    <header>
+        <h1>todos</h1>
+        <input placeholder="Add new todo" autofocus="" [(ngModel)]="newTodoText">
+        <button type="button" (click)="addTodo()">Add</button>
+    </header>
+    <section>
+        <ul>
+            <li *ngFor="let todo of todos">
+                <input type="checkbox" (click)="toggleCompletion(todo)" [checked]="todo.completed">
+                <label>{{todo.title}}</label>
+                <button (click)="remove(todo)">X</button>
+            </li>
+        </ul>
+    </section>
+    <footer *ngIf="todos.length > 0">
+        <span><strong>{{getPending().length}}</strong> {{getPending().length == 1 ? 'item' : 'items'}} left</span>
+        <button *ngIf="getCompleted().length > 0" (click)="removeCompleted()">Clear completed</button>
+    </footer>
+</section>
+

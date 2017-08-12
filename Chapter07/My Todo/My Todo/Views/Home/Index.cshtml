@@ -1,0 +1,26 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>My Todo</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="UTF-8">
+    <!-- Polyfills -->
+    <script src="libs/shim.min.js"></script>
+    <script src="libs/zone.min.js"></script>
+    <script src="libs/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<body>
+    <h1>My Todo App</h1>
+    <my-app>Loading My Todo App...</my-app>
+</body>
+</html>
